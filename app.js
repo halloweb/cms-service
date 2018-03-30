@@ -1,0 +1,10 @@
+const Koa = require('koa')
+const app = new Koa()
+const router = require('./app/router')
+const colors = require('colors')
+const reqInfo = require('./app/middleware/reqInfo')
+// 加载路由中间件
+app.use(reqInfo())
+app.use(router.routes()).use(router.allowedMethods())
+app.listen(8012)
+console.log('service is starting at port 8012'.green)
