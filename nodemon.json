@@ -9,7 +9,8 @@
          "app/", 
          "lib/",
          "config/",
-         "server/"
+         "server/",
+         "app.js"
      ], 
      "ext": "js json",
      "legacy-watch": false

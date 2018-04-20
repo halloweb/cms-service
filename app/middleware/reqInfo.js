@@ -1,5 +1,5 @@
 module.exports = () => {
-	async (ctx, next) {
+	return async (ctx, next) => {
 		let startTime = new Date().getTime();
         await next();
         let endTime = new Date().getTime();

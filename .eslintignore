@@ -1,0 +1,10 @@
+build/*.js
+config/*.js
+src/login/md5.js
+static/*.js
+
+/build/
+/config/
+/dist/
+/*.js
+/test/unit/coverage/
